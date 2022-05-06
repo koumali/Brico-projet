@@ -1,0 +1,108 @@
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    font-weight: bold;
+}
+form{
+    border: 1px solid black;
+    box-shadow: 0 0 1em black;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #fff;
+    /* background-image: linear-gradient(to left, #fdeff9, #ec38bc, #7303c0, #03001e); */
+}
+form h1{
+    font-size: 20px;
+    padding-top: 0;
+    text-align: center;
+    align-content: center;
+}
+form .logo{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+form .logo img{
+    width: 40px;
+    height: 40px;
+}
+form .separation{
+    width: 100%;
+    height: 1px;
+    background-color: blueviolet;
+}
+form .corps-formulaire{
+    display: flex;
+}
+form .corps-formulaire .boite{
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    text-align: center;
+}
+form .corps-formulaire .droite{
+    align-content: center;
+    text-align: center;
+    display: flex;
+}
+form .corps-formulaire .droite .image{
+    text-align: center;
+    align-items: center;
+}
+form .corps-formulaire .droite .image .img-container{
+    width: 200px;
+    height: 100%;
+    padding: 20px 0 0 30px;
+}
+
+form .corps-formulaire .boite input{
+    margin: 4px 0 0 4px;
+    padding: 10px 5px 10px 30px;
+    border: 1px solid blueviolet ;
+    border-radius: 5px;
+    outline: none;
+    outline-color: blueviolet;
+}
+form .corps-formulaire .boite i{
+    color: blueviolet;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    padding: 9px 12px;
+}
+
+form .pied button{ 
+    margin-top: 10px;
+    background-color: blueviolet;
+    color:#fff;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+form .pied button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px blueviolet;
+}
+form .link{
+    text-align: center;
+}
+form .link a{
+    color: #C70039;
+}
+@media(max-width: 600px){
+    form .corps-formulaire .droite .image .img-container{
+        display: none;
+    } 
+}

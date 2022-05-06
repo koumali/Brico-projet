@@ -1,0 +1,58 @@
+.vote{
+    width: 100%;
+    margin: 0;
+}
+.vote form{
+    display: inline-block;
+}
+.vote_bar{
+    width: 100%;
+    height: 4px;
+    background-color: #a5ac20;
+}
+.vote_progress{
+    height: 4px;
+    width: 0%;
+    background-color: var(--first-color);
+    transition: width 0.3s;
+}
+.vote_btns{
+   display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+}
+.vote_btns button{
+    padding-top:5px ;
+    border: 0; 
+} 
+.vote_btns button i{
+    width: 30px;
+} 
+.vote_btn{
+    outline: none;
+    display: inline-block;
+    cursor: pointer;
+    background: transparent;
+    transition: color 0.3s;
+}
+.a1:hover{
+    color: var(--title-color);
+}
+.vote_like:hover,.is-liked .vote_like {
+    color: var(--first-color);
+}
+.vote_dislike:hover,.is-disliked .vote_dislike{
+    color: #a5ac20;
+} 
+.llcomment{
+    margin:0 30px;
+    border-radius: 0 20px 20px 20px;
+    background-color: var(--container-color);
+    box-shadow: 0px 2px 4px hsla(var(--hue), 100%, 15%, 0.15);
+}
+.llcomment .kk a{
+    padding: 0 30px;
+}
+.llcomment .kk p{
+    padding: 0 50px;
+}
